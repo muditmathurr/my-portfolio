@@ -13,15 +13,19 @@ const Resume = () => {
     };
 
     const headerStyle = {
+        display: 'flex',
         fontSize: "2.5rem",
         fontWeight: "bold",
         marginBottom: "2rem",
         textAlign: "left",
     };
-
+    const downloadResume = {
+        fontSize: "15px",
+        marginLeft: "10px",
+        color: "#8a8e8e"
+    }
     const subsectionHeaderStyle = {
-        width: "5rem",
-        fontSize: "1.5rem",
+        fontSize: "2rem",
         fontWeight: "bold",
         marginBottom: "1rem",
     };
@@ -33,11 +37,11 @@ const Resume = () => {
     };
 
     const detailsStyle = {
-        display: "flex",
-        justifyContent: "start",
+        // display: "flex",
+        // justifyContent: "start",
         // border: "2px solid black",
         flex: "0 0 40%",
-        gap: "1rem"
+        gap: "1rem",
     };
 
     const descriptionStyle = {
@@ -49,7 +53,7 @@ const Resume = () => {
     const dividerStyle = {
         width: "100%",
         height: "1px",
-        backgroundColor: "#ddd",
+        backgroundColor: "#green",
         margin: "2rem 0",
     };
 
@@ -58,8 +62,15 @@ const Resume = () => {
             <Navbar />
             <div style={{ padding: "3rem 0", }}>
                 <div style={sectionStyle}>
-                    <div style={headerStyle}>Resume</div>
 
+
+                    <div style={headerStyle}>Resume <button style={downloadResume}>
+                        <a
+                        href="/Resume.pdf" 
+                        download="MyResume.pdf"
+                    >
+                        Download here
+                    </a></button></div>
                     <div>
                         <div style={subsectionHeaderStyle}>Work Experience</div>
 
@@ -68,7 +79,7 @@ const Resume = () => {
 
                             </div>
                             <div style={detailsStyle}>
-                                <h4>Frontend Developer</h4>
+                                <h4 style={{fontWeight: "bold", fontSize: "1.3rem",  width: "15rem"}}>Frontend Developer</h4>
                                 <p>
                                     Deeporion Technology
                                 </p>
@@ -80,7 +91,7 @@ const Resume = () => {
 
                             </div>
                             <div style={detailsStyle}>
-                                <h4>Software Developer Intern</h4>
+                                <h4 style={{fontWeight: "bold", fontSize: "1.3rem",width:"15rem"}}>Software Developer Intern</h4>
                                 <p>
                                     Autope Payment Solutions Pvt. Ltd.
                                 </p>
@@ -91,12 +102,11 @@ const Resume = () => {
 
                     <div style={dividerStyle}></div>
 
-                    {/* Education Section */}
                     <div>
                         <div style={subsectionHeaderStyle}>Education</div>
                         <div style={itemContainerStyle}>
                             <div>
-                                <h4>Subodh College | Master’s Degree</h4>
+                                <h4 style={{fontWeight: "bold", fontSize: "1.3rem", width:"22rem"}}>Subodh College | Master’s Degree</h4>
                                 <p>2021 - 2023</p>
                             </div>
                             <div style={detailsStyle}>
@@ -108,7 +118,7 @@ const Resume = () => {
                         </div>
                         <div style={itemContainerStyle}>
                             <div>
-                                <h4>JECRC University | Bachelor’s Degree</h4>
+                                <h4 style={{fontWeight: "bold", fontSize: "1.3rem", width:"25rem"}}>JECRC University | Bachelor’s Degree</h4>
                                 <p>2018 - 2021</p>
                             </div>
                             <div style={detailsStyle}>
@@ -192,6 +202,7 @@ const Resume = () => {
                     </div>
                 </div>
             </div>
+            <div style={{width: "100%", height: "1px", border: "1px solid black"}}></div>
             <Footer />
         </>
     );
