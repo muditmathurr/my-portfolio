@@ -42,7 +42,7 @@ const Contact = () => {
         marginTop: isMobile ? '50px': '',
         display: 'flex',
         flexDirection: isMobile ? "column" : "row",
-        justifyContent: isMobile ? "center" : "space-evenly",
+        justifyContent: isMobile ? "center" : "center",
         alignItems: 'center',
         padding: '2rem',
         fontFamily: 'Arial, sans-serif',

@@ -44,7 +44,7 @@ const Navbar = () => {
 
             {isOpen && (
                 <div className="absolute top-16 left-0 w-full bg-#ddddd4 shadow-lg md:hidden">
-                    <div className="flex flex-col p-4 gap-4">
+                    <div className="flex flex-col p-4 gap-4" style={{backgroundColor: "#fff", width: ""}}>
                         <button
                             onClick={() => {
                                 navigate("/resume")
