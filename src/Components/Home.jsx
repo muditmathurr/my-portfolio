@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import Navbar from './Navbar';
 import Footer from './Footer';
-import profile from './../assets/profile.jpeg'
+import slack from './../assets/slack.jpg'
 const Home = () => {
         const navigate = useNavigate();
 
@@ -66,7 +66,7 @@ const Home = () => {
                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", border: "3px solid black", borderRadius: "50%", padding: "5px"}}>
                         <img
                             style={imageStyle}
-                            src={profile}
+                            src={slack}
                             alt="Responsive"
                         />
                     </div>
