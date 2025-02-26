@@ -43,14 +43,17 @@ const Navbar = () => {
             </div>
 
             {isOpen && (
-                <div className="absolute top-16 left-0 w-full bg-#ddddd4 shadow-lg md:hidden">
-                    <div className="flex flex-col p-4 gap-4" style={{backgroundColor: "#fff", width: ""}}>
+                <div style={{alignItems:"center"}} className="absolute top-16 right-5  md:hidden">
+                    <div style={{backgroundColor: "rgba(240, 240, 240, 1)", borderRadius: "30px", display: 'flex', flexDirection: "column",
+                    width:"150px", alignItems: "center"
+                    }}>
                         <button
                             onClick={() => {
                                 navigate("/resume")
                                 setIsOpen(false)
                             }}
                             className="text-right font-bold py-2"
+                            style={{fontSize: "20px"}}
                         >
                             Resume
                         </button>
@@ -60,6 +63,7 @@ const Navbar = () => {
                                 setIsOpen(false)
                             }}
                             className="text-right font-bold py-2"
+                            style={{fontSize: "20px"}}
                         >
                             Project
                         </button>
@@ -69,6 +73,7 @@ const Navbar = () => {
                                 setIsOpen(false)
                             }}
                             className="text-right font-bold py-2"
+                            style={{fontSize: "20px"}}
                         >
                             Contact
                         </button>
