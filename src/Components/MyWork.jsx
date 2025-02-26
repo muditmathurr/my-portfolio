@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import internal from './../assets/internal.png'
-
+import gym from './../assets/gym.png'
+import ecom from './../assets/ecom.png'
 const MyWork = () => {
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -72,10 +73,19 @@ const MyWork = () => {
                                 className="object-cover rounded-lg"
                                 sizes="(max-width: 768px) 100vw, 50vw"
                             />
+                            {/* <div style={{}}>
+
+                                <button style={{
+                                    width: "30rem",
+                                    border: "2px solid white",
+                                    borderRadius: "5px",
+                                    backgroundColor: "rgba(10,0,100,0.5)"
+                                }}>Github</button>
+                            </div> */}
                         </div>
                     </div>
 
-                    {/* Project 02 */}
+                    {/* Project 03 */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                         <div className="space-y-4">
                             <h2 className="text-2xl font-semibold">E-commerce</h2>
@@ -90,17 +100,34 @@ const MyWork = () => {
                                 • Developed shopping cart features enabling users to add items, manage quantities, and place orders seamlessly.
                             </p>
                             <p className="text-gray-600 leading-relaxed">
-                                • Created the product catalog section and implemented API integration to fetch catalog items and apply filters
-                                (gender, brand, upper wear, lower wear).
-                            </p>
-                            <p className="text-gray-600 leading-relaxed">
-                                •Implemented features for users to track order statuses on UI, providing transparency and enhancing user
-                                experience.
+                                • Created different membership sections so that customer can select according to their need.
                             </p>
                         </div>
                         <div className="relative h-[300px] w-full">
                             <img
-                                src={internal}
+                                src={ecom}
+                                alt="Project 2 showcase"
+                                fill
+                                className="object-cover rounded-lg"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                        <div className="space-y-4">
+                            <h2 className="text-2xl font-semibold">Gym</h2>
+                            <p className="text-gray-600 leading-relaxed">
+                                • Developed the UI for the Gym freaks platform using React.js and TypeScript.
+                            </p>
+                            <p className="text-gray-600 leading-relaxed">
+                                • Developed email js form to get a call for registering.
+                            </p>
+                    
+                        </div>
+                        <div className="relative h-[300px] w-full">
+                            <img
+                                src={gym}
                                 alt="Project 2 showcase"
                                 fill
                                 className="object-cover rounded-lg"

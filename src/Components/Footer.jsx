@@ -25,7 +25,7 @@ const Footer = () => {
             {/* Email Section */}
             <div style={{ flex: "1", minWidth: "150px" }}>
                 <h4 style={{ margin: "0 0 0.5rem", fontWeight: "bold" }}>Email</h4>
-                <p style={{ margin: 0 }}>muditmathur05@gmail.com</p>
+                <p style={{ margin: 0, fontSize: "15px"}}>muditmathur05@gmail.com</p>
             </div>
 
             {/* Follow Me Section */}

@@ -106,26 +106,15 @@ const Resume = () => {
                         <div style={subsectionHeaderStyle}>Education</div>
                         <div style={itemContainerStyle}>
                             <div>
-                                <h4 style={{fontWeight: "bold", fontSize: "1.3rem", width:"22rem"}}>Subodh College | Master’s Degree</h4>
+                                <h4 style={{fontWeight: "bold", fontSize: "1.3rem", width:"19rem"}}>Subodh College | Master’s Degree</h4>
                                 <p>2021 - 2023</p>
                             </div>
-                            <div style={detailsStyle}>
-                                {/* <p>
-                                    I'm a paragraph. Click here to add your own text and edit me.
-                                    Let your users get to know you.
-                                </p> */}
-                            </div>
+                            
                         </div>
                         <div style={itemContainerStyle}>
                             <div>
-                                <h4 style={{fontWeight: "bold", fontSize: "1.3rem", width:"25rem"}}>JECRC University | Bachelor’s Degree</h4>
+                                <h4 style={{fontWeight: "bold", fontSize: "1.3rem", width:"19rem"}}>JECRC University | Bachelor’s Degree</h4>
                                 <p>2018 - 2021</p>
-                            </div>
-                            <div style={detailsStyle}>
-                                {/* <p>
-                                    I'm a paragraph. Click here to add your own text and edit me.
-                                    Let your users get to know you.
-                                </p> */}
                             </div>
                         </div>
                     </div>

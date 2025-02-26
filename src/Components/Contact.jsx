@@ -21,15 +21,15 @@ const Contact = () => {
 
         emailjs
             .sendForm(
-                'service_63ec6fd', // Replace with your EmailJS service ID
-                'template_pfzrtpj', // Replace with your EmailJS template ID
-                formRef.current, // Use the form reference
-                '-Kxp5JUU-pahNBrZx' // Replace with your EmailJS user ID
+                'service_63ec6fd', 
+                'template_pfzrtpj',
+                formRef.current, 
+                '-Kxp5JUU-pahNBrZx'
             )
             .then(
                 (result) => {
                     alert('Email sent successfully!');
-                    formRef.current.reset(); // Clear the form
+                    formRef.current.reset();
                 },
                 (error) => {
                     alert('Failed to send email. Please try again.');
@@ -39,6 +39,7 @@ const Contact = () => {
     };
 
     const contactStyle = {
+        marginBottom: '8rem',
         display: 'flex',
         flexDirection: isMobile ? "column" : "row",
         justifyContent: isMobile ? "center" : "space-evenly",
@@ -50,15 +51,15 @@ const Contact = () => {
     };
 
     const formStyle = {
-        width: isMobile ? '100%' : '80%', // Full width for mobile, 50% for desktop
-        maxWidth: '30rem', // Limit the max width for desktop
-        margin: '0 auto', // Center the form
-        padding: '1.5rem', // Add padding inside the form
-        borderRadius: '10px', // Optional: Round the corners
+        width: isMobile ? '100%' : '80%', 
+        maxWidth: '30rem',
+        margin: '0 auto', 
+        padding: '1.5rem',
+        borderRadius: '10px',
     };
 
     const leftSectionStyle = {
-        width: '40%',
+        width: isMobile? '80%': '40%',
         textAlign: isMobile ? 'center' : '',
         marginBottom: isMobile ? "" : '17rem',
     };
