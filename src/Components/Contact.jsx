@@ -39,7 +39,7 @@ const Contact = () => {
     };
 
     const contactStyle = {
-        marginBottom: '8rem',
+        marginTop: isMobile ? '50px': '',
         display: 'flex',
         flexDirection: isMobile ? "column" : "row",
         justifyContent: isMobile ? "center" : "space-evenly",
@@ -144,6 +144,8 @@ const Contact = () => {
                     </button>
                 </form>
             </div>
+
+            <div style={{marginTop: "80px"}}></div>
             <Footer />
         </>
     );
