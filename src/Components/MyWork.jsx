@@ -105,7 +105,7 @@ const MyWork = () => {
                                 • Order Management: Designed a smooth checkout process, enabling users to place orders effortlessly.
                             </p>
                             <p className="text-gray-600 leading-relaxed">
-                                • If you want to see: <a href="https://my-book-mudit.vercel.app/" target="_blank" rel="noopener noreferrer" style={{fontWeight: "bolder" ,color: "blue"}}>Visit Website</a>
+                                • If you want to see: <a href="https://my-book-mudit.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ fontWeight: "bolder", color: "blue" }}>Visit Website</a>
                             </p>
                         </div>
                         <div className="relative h-[300px] w-full">
@@ -130,7 +130,7 @@ const MyWork = () => {
                             </p>
 
                             <p className="text-gray-600 leading-relaxed">
-                                • If you want to see: <a href="https://mygymshark-eight.vercel.app/" target="_blank" rel="noopener noreferrer" style={{fontWeight: "bolder" ,color: "blue"}}>Visit Website</a>
+                                • If you want to see: <a href="https://mygymshark-eight.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ fontWeight: "bolder", color: "blue" }}>Visit Website</a>
                             </p>
 
 
@@ -150,7 +150,7 @@ const MyWork = () => {
                         <div className="space-y-4">
                             <h2 className="text-2xl font-semibold">PressMart. </h2>
                             <p className="text-gray-600 leading-relaxed">
-                                • Developed a fully responsive e-commerce web page using HTML, CSS, and JavaScript, leveraging SCSS for modular and maintainable styling to enhance performance and scalability.
+                                • Developed a fully responsive e-commerce web page using HTML, CSS, and JavaScript, leveraging SCSS for better styling and maintainability. Integrated Swiper.js to create smooth and interactive sliders, enhancing the user experience.
                             </p>
 
                         </div>
