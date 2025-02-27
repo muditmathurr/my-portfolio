@@ -4,6 +4,7 @@ import Footer from './Footer';
 import internal from './../assets/internal.png'
 import gym from './../assets/gym.png'
 import ecom from './../assets/ecom.png'
+import ecomm from './../assets/ecomm.png'
 const MyWork = () => {
 
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -94,18 +95,22 @@ const MyWork = () => {
                             </p>
 
                             <p className="text-gray-600 leading-relaxed">
-                                • Developed the UI for the e-commerce platform using React.js and TypeScript.
+                                • Wishlist Feature: Developed a wishlist functionality, allowing users to save books for future purchases.
                             </p>
                             <p className="text-gray-600 leading-relaxed">
-                                • Developed shopping cart features enabling users to add items, manage quantities, and place orders seamlessly.
+                                • Add to Cart: Enabled users to add books to the cart, update quantities, and remove items seamlessly.
+                            </p>
+
+                            <p className="text-gray-600 leading-relaxed">
+                                • Order Management: Designed a smooth checkout process, enabling users to place orders effortlessly.
                             </p>
                             <p className="text-gray-600 leading-relaxed">
-                                • Created different membership sections so that customer can select according to their need.
+                                • If you want to see: <a href="https://my-book-mudit.vercel.app/" target="_blank" rel="noopener noreferrer" style={{fontWeight: "bolder" ,color: "blue"}}>Visit Website</a>
                             </p>
                         </div>
                         <div className="relative h-[300px] w-full">
                             <img
-                                src={ecom}
+                                src={ecomm}
                                 alt="Project 2 showcase"
                                 fill
                                 className="object-cover rounded-lg"
@@ -123,11 +128,35 @@ const MyWork = () => {
                             <p className="text-gray-600 leading-relaxed">
                                 • Developed email js form to get a call for registering.
                             </p>
-                    
+
+                            <p className="text-gray-600 leading-relaxed">
+                                • If you want to see: <a href="https://mygymshark-eight.vercel.app/" target="_blank" rel="noopener noreferrer" style={{fontWeight: "bolder" ,color: "blue"}}>Visit Website</a>
+                            </p>
+
+
                         </div>
                         <div className="relative h-[300px] w-full">
                             <img
                                 src={gym}
+                                alt="Project 2 showcase"
+                                fill
+                                className="object-cover rounded-lg"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                        <div className="space-y-4">
+                            <h2 className="text-2xl font-semibold">PressMart. </h2>
+                            <p className="text-gray-600 leading-relaxed">
+                                • Developed a fully responsive e-commerce web page using HTML, CSS, and JavaScript, leveraging SCSS for modular and maintainable styling to enhance performance and scalability.
+                            </p>
+
+                        </div>
+                        <div className="relative h-[300px] w-full">
+                            <img
+                                src={ecom}
                                 alt="Project 2 showcase"
                                 fill
                                 className="object-cover rounded-lg"
